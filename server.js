@@ -4,7 +4,6 @@
 var express = require('express');
 var app = express();
 var bodyParse = require('body-parser');
-var es6 = require('es6');
 
 app.use(bodyParse.json());
 app.use(require('./middleware/headers'));
