@@ -3,11 +3,15 @@
  */
 var express = require('express');
 var app = express();
+var bodyParse = require('body-parser');
 
+app.use(bodyParse.json());
 
 app.use('/test', function (req, res) {
     res.send('Hello world');
 });
+
+app.use('/api/users', require('./routes/users'));
 
 app.listen(3000, function () {
     console.log('App is listening on port 3000... ');
