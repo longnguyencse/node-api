@@ -11,7 +11,9 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.1",
+    "es6": "0.0.7",
     "express": "^4.13.3",
+    "jsonwebtoken": "^7.3.0",
     "mongoose": "^4.2.6"
   },
   "devDependencies": {}
