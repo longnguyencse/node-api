@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
 });
 
 // create a new definition:
-route.post('/', function (req, res) {
+router.post('/', function (req, res) {
     var def = new Definition({
         ower: req.user,
         logType: req.body.definition.type,
@@ -27,7 +27,7 @@ route.post('/', function (req, res) {
             definition: definition
         });
     });
-})
+});
 
 // update a existion definition
 router.put('/:id', function (req, res) {

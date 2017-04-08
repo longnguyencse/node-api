@@ -7,7 +7,10 @@ var bcrypt = require('bcryptjs');
 
 var jwt= require('jsonwebtoken');
 
-var constants = require('/config/constants');
+var constants = {
+    JWT_SECRET : 'This is a secret'
+};
+
 
 router.post('/', function (req, res) {
     User.findOne({username: req.body.user.username}).then(
